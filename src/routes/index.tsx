@@ -10,9 +10,9 @@ import sea from "@/assets/paseo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
-    { title: "Para ti, con amor · Feliz cumpleaños" },
+    { title: "de mi para tu · Feliz cumpleaños" },
     { name: "description", content: "Una celebración del 16 de octubre entre flores, recuerdos, música y palabras desde el corazón." },
-    { property: "og:title", content: "Para ti, con amor · Feliz cumpleaños" },
+    { property: "og:title", content: "De mi para tu, con amor · Feliz cumpleaños" },
     { property: "og:description", content: "Un pequeño jardín de recuerdos para celebrar tu vida este 16 de octubre." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
@@ -56,7 +56,7 @@ function BirthdayPage() {
     <section className="birthday-cover" id="inicio">
       <img className="cover-photo" src={garden} alt="Un paseo entre flores blancas en un jardín lleno de luz" width={1920} height={1024}/>
       <div className="cover-shade"/>
-      <div className="cover-content"><p className="eyebrow cover-eyebrow"><span/>16 DE OCTUBRE · UN DÍA PARA CELEBRARTE</p><h1>Feliz<br/><em>cumpleaños.</em></h1><p className="cover-message">Hay personas que hacen la vida más bonita.<br/>Y tú eres una de ellas.</p><Button variant="botanical" onClick={() => go("tu-dia")}>desliza <ArrowDown size={16}/></Button><p className="cover-signature">con mucho cariño amistad</p></div>
+      <div className="cover-content"><p className="eyebrow cover-eyebrow"><span/>16 DE OCTUBRE · tu dia especial</p><h1>Feliz<br/><em>cumpleaños.</em></h1><p className="cover-message">Hay personas que hacen la vida más bonita.<br/>Y tú eres una de ellas.</p><Button variant="botanical" onClick={() => go("tu-dia")}>desliza <ArrowDown size={16}/></Button><p className="cover-signature">con mucho cariño amistad</p></div>
       <span className="cover-index">UN NUEVO AÑO MAS DE VIDA</span>
       <Button variant="navigation" size="icon" className="scroll-cue" aria-label="Ir a tu día" onClick={() => go("tu-dia")}><ArrowDown size={18}/></Button>
     </section>
